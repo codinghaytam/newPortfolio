@@ -57,7 +57,6 @@ export default function Home() {
             </Link>
           </nav>
           <div className="flex items-center gap-4">
-            <ThemeToggle />
             <Link href="https://github.com/codinghaytam" target="_blank" rel="noopener noreferrer">
               <Github className="h-5 w-5" />
               <span className="sr-only">GitHub</span>
