@@ -4,7 +4,7 @@ import React from "react"
 import clsx from "clsx"
 import { FaAws, FaDocker, FaJava, FaNodeJs, FaPython, FaReact } from "react-icons/fa"
 import {
-    SiD3Dotjs,
+    SiD3,
     SiExpress,
     SiKubernetes,
     SiMongodb,
@@ -30,7 +30,7 @@ const ICONS = {
   docker: FaDocker,
   kubernetes: SiKubernetes,
   aws: FaAws,
-  d3: SiD3Dotjs,
+  d3: SiD3,
     pytorch: SiPytorch,
     springF: SiSpring,
 } as const

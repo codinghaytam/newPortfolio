@@ -15,10 +15,9 @@ import {
     SiTypescript,
     SiNextdotjs,
     SiR,
-    SiD3Dotjs,
     SiKubernetes,
     SiMysql,
-    SiExpress, SiKeycloak, SiTauri, SiBootstrap, SiPandas, SiPython, SiFastapi, SiScikitlearn, SiAmazonec2
+    SiExpress, SiKeycloak, SiTauri, SiBootstrap, SiPandas, SiPython, SiFastapi, SiScikitlearn
 } from "react-icons/si"
 import React from 'react'
 import { motion } from "motion/react"
@@ -350,7 +349,7 @@ export default function Home() {
                                 <SiScikitlearn className="h-9 w-9" style={{ color: '#F7931E' }} />
                             </Badge>
                             <Badge className="bg-transparent border-none hover:bg-transparent">
-                                <SiAmazonec2 className="h-9 w-9" style={{ color: '#007396' }} />
+                                <FaAws className="h-9 w-9" style={{ color: '#FF9900' }} />
                             </Badge>
                             <Badge className="bg-transparent border-none hover:bg-transparent">
                                 <DiDocker className="h-9 w-9" style={{ color: '#007396' }} />
