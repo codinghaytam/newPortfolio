@@ -140,8 +140,8 @@ export default function Home() {
               <div className="space-y-2">
 
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Technical Expertise</h2>
-                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I've developed a diverse skill set across various technologies, with a focus on game development and
+                <p className="max-w-[900px] mx-auto text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  I've developed a diverse skill set across various technologies, with a focus on full-stack development and
                   data science.
                 </p>
                   <SkillsMarquee
@@ -149,7 +149,7 @@ export default function Home() {
                           { icon: 'java', label: 'Java', color: '#007396' },
                           { icon: 'spring', label: 'Spring Boot', color: '#6DB33F' },
                           { icon: 'react', label: 'React', color: '#61DAFB' },
-                          { icon: 'nextjs', label: 'Next.js', color: '#000000' },
+                          { icon: 'nextjs', label: 'Next.js', color: '#ffffff' },
                           { icon: 'node', label: 'Node.js', color: '#339933' },
                           { icon: 'express', label: 'Express' },
                           { icon: 'typescript', label: 'TypeScript', color: '#3178C6' },
@@ -162,9 +162,6 @@ export default function Home() {
                       ]}
                   />
               </div>
-            </div>
-            <div className="mx-auto grid max-w-5xl gap-8 py-12 md:grid-cols-2 lg:grid-cols-3">
-
             </div>
           </div>
         </section>
@@ -199,15 +196,15 @@ export default function Home() {
                   <CardContent>
                     <div className="grid gap-4 md:grid-cols-2">
                       <Image
-                        src="/orthotrace.jpg?height=300&width=500"
+                        src="/orthotrace.jpg"
                         width={500}
                         height={300}
-                        alt="E-Commerce Platform"
+                        alt="Screenshot of the EMR desktop app for the Ibn Rochd dental center"
                         className="rounded-lg object-cover w-full"
                       />
                       <div>
                         <p className="text-muted-foreground mb-4">
-                          Developed a cross-platform for sharing patient information between the periodontology and dentofacial orthopedics departments of the Ibn Rochd Dental Consultation and Treatment Center
+                          Developed a cross-platform application for sharing patient information between the periodontology and dentofacial orthopedics departments of the Ibn Rochd Dental Consultation and Treatment Center.
                         </p>
                         <div className="flex flex-wrap gap-2">
                             <Badge className="bg-transparent border-none hover:bg-transparent">
@@ -225,7 +222,7 @@ export default function Home() {
                           <Badge className="bg-transparent border-none hover:bg-transparent">
                             <SiPostgresql className="h-9 w-9" style={{ color: '#336791' }} />
                           </Badge>
-                            <Badge>
+                            <Badge className="bg-transparent border-none hover:bg-transparent">
                                 <SiTauri  className="h-9 w-9"  />
                             </Badge>
                           <Badge className="bg-transparent border-none hover:bg-transparent">
@@ -248,15 +245,15 @@ export default function Home() {
                   <CardContent>
                     <div className="grid gap-4 md:grid-cols-2">
                       <Image
-                        src="/java-crm.jpg?height=300&width=500"
+                        src="/java-crm.jpg"
                         width={500}
                         height={300}
-                        alt="Task Manager Application"
+                        alt="Screenshot of the Java CRM desktop app"
                         className="rounded-lg object-cover w-full"
                       />
                       <div>
                         <p className="text-muted-foreground mb-4">
-                          A Desktop application for managing customer relationships, tracking interactions, and analyzing sales data.
+                          A desktop application for managing customer relationships, tracking interactions, and analyzing sales data.
                         </p>
                         <div className="flex flex-wrap gap-2">
                           <Badge className="bg-transparent border-none hover:bg-transparent">
@@ -282,20 +279,20 @@ export default function Home() {
               <TabsContent value="data" className="mt-6 space-y-8">
                 <Card>
                   <CardHeader>
-                    <CardTitle>Smart contract analysis vulnerability detection</CardTitle>
+                    <CardTitle>Smart Contract Vulnerability Detection</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <div className="grid gap-4 md:grid-cols-2">
                       <Image
-                        src="/cover-static-analysis (1).png?height=300&width=500"
+                        src="/smart-contract-analysis.png"
                         width={500}
                         height={300}
-                        alt="Urban Mobility Analysis"
+                        alt="Smart contract static analysis illustration"
                         className="rounded-lg object-cover w-full"
                       />
                       <div>
                         <p className="text-muted-foreground mb-4">
-                            Designing a model for vulnerability detection in ethereum smart contracts
+                            Designing a machine learning model to detect vulnerabilities in Ethereum smart contracts.
                         </p>
                         <div className="flex flex-wrap gap-2">
                           <Badge className="bg-transparent border-none hover:bg-transparent">
@@ -320,20 +317,20 @@ export default function Home() {
                 </Card>
                 <Card>
                   <CardHeader>
-                    <CardTitle>Fraud detection in ethereum blockcahin</CardTitle>
+                    <CardTitle>Fraud Detection on the Ethereum Blockchain</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <div className="grid gap-4 md:grid-cols-2">
                       <Image
-                        src="./ethergard.png?height=300&width=500"
+                        src="/ethergard.png"
                         width={500}
                         height={300}
-                        alt="Health Metrics Dashboard"
+                        alt="Screenshot of the EtherGuard Ethereum fraud detection tool"
                         className="rounded-lg object-cover w-full"
                       />
                       <div>
                         <p className="text-muted-foreground mb-4">
-                            A fraud detection tool that analyses ethereum account addresses for fraudulante patterns
+                            A fraud detection tool that analyzes Ethereum account addresses for fraudulent patterns.
                         </p>
                         <div className="flex flex-wrap gap-2">
                           <Badge className="bg-transparent border-none hover:bg-transparent">

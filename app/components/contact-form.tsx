@@ -18,12 +18,16 @@ export default function ContactForm() {
 
     startTransition(async () => {
       try {
-        await send(formData);
-        form.reset();
-        setMessage("Message sent.");
+        const result = await send(formData);
+        if (result.ok) {
+          form.reset();
+          setMessage("Message sent. Thanks for reaching out!");
+        } else {
+          setMessage(result.error);
+        }
       } catch (err) {
         console.error(err);
-        setMessage("Failed to send.");
+        setMessage("Failed to send. Please try again or email me directly.");
       }
     });
   }

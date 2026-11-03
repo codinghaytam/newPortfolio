@@ -63,7 +63,7 @@ export default function SkillsMarquee({ items, className }: SkillsMarqueeProps) 
                     className="h-8 w-8 md:h-10 md:w-10 opacity-80 group-hover:opacity-100 transition-opacity"
                     style={color ? { color } : undefined}
                   />
-                  <span className="sr-only">{label || icon}</span>
+                  <span className="text-sm font-medium text-muted-foreground group-hover:text-foreground transition-colors">{label || icon}</span>
                 </li>
               )
             })}
