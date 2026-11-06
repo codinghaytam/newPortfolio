@@ -47,15 +47,29 @@ module.exports = {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
         },
+        brand: {
+          1: "var(--brand-1)",
+          2: "var(--brand-2)",
+          3: "var(--brand-3)",
+          4: "var(--brand-4)",
+          5: "var(--brand-5)",
+          6: "var(--brand-6)",
+          soft: "var(--brand-soft)",
+        },
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      // Square, pixel-style corners across every component
       borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        lg: "0px",
+        md: "0px",
+        sm: "0px",
+      },
+      fontFamily: {
+        sans: ["var(--font-sans)", "ui-sans-serif", "system-ui", "sans-serif"],
+        mono: ["var(--font-mono)", "ui-monospace", "monospace"],
       },
       keyframes: {
         "accordion-down": {

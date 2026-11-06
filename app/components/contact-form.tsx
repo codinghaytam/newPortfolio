@@ -35,7 +35,7 @@ export default function ContactForm() {
   return (
     <form className="grid gap-4" onSubmit={onSubmit}>
       <div className="grid gap-2">
-        <label htmlFor="name" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+        <label htmlFor="name" className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
           Name
         </label>
         <input
@@ -47,7 +47,7 @@ export default function ContactForm() {
         />
       </div>
       <div className="grid gap-2">
-        <label htmlFor="email" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+        <label htmlFor="email" className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
           Email
         </label>
         <input
@@ -60,7 +60,7 @@ export default function ContactForm() {
         />
       </div>
       <div className="grid gap-2">
-        <label htmlFor="message" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+        <label htmlFor="message" className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
           Message
         </label>
         <textarea
@@ -71,7 +71,7 @@ export default function ContactForm() {
           placeholder="Your message"
         />
       </div>
-      <Button type="submit" disabled={pending}>
+      <Button type="submit" disabled={pending} className="font-mono text-xs uppercase tracking-widest">
         {pending ? "Sending..." : "Send Message"}
       </Button>
       {message && (
