@@ -7,9 +7,9 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" })
 
 export const metadata: Metadata = {
-  title: "Mohamed Haytam Soukrati - Software Engineer Portfolio",
+  title: "Mohamed Haytam Soukrati — Knowledge Graph Engineer",
   description:
-    "Portfolio of Mohamed Haytam Soukrati, a software engineering student specializing in full-stack development and data science"
+    "Portfolio of Mohamed Haytam Soukrati, Knowledge Graph Engineer at SevenBlue, working on knowledge graphs, data pipelines, machine learning and health-data interoperability (HL7/FHIR).",
 }
 
 export default function RootLayout({
