@@ -51,24 +51,34 @@ export interface SkillsMarqueeProps {
 
 export default function SkillsMarquee({ items, className }: SkillsMarqueeProps) {
   return (
-      <div className="container px-4 md:px-6 py-6">
-        <div className="flex flex-col gap-6">
-          <ul className="flex flex-wrap items-center justify-center gap-x-8 gap-y-6">
-            {items.map(({ icon, label, color }, idx) => {
-              const Icon = ICONS[icon]
-              return (
-                <li key={`${icon}-${idx}`} className="group inline-flex items-center gap-2">
-                  <Icon
-                    aria-hidden
-                    className="h-8 w-8 md:h-10 md:w-10 opacity-80 group-hover:opacity-100 transition-opacity"
-                    style={color ? { color } : undefined}
-                  />
-                  <span className="text-sm font-medium text-muted-foreground group-hover:text-foreground transition-colors">{label || icon}</span>
-                </li>
-              )
-            })}
-          </ul>
-        </div>
-      </div>
+    <ul
+      className={clsx(
+        "grid grid-cols-2 border-l border-t border-border sm:grid-cols-3 lg:grid-cols-5",
+        className,
+      )}
+    >
+      {items.map(({ icon, label, color }, idx) => {
+        const Icon = ICONS[icon]
+        return (
+          <li
+            key={`${icon}-${idx}`}
+            className="group relative flex flex-col items-start justify-between gap-8 border-b border-r border-border p-5 transition-colors hover:bg-white/[0.03]"
+          >
+            <span
+              aria-hidden
+              className="absolute left-0 top-0 h-1 w-0 bg-gradient-to-r from-brand-1 via-brand-3 to-brand-6 transition-all duration-300 group-hover:w-full"
+            />
+            <Icon
+              aria-hidden
+              className="h-8 w-8 text-muted-foreground transition-colors duration-300 group-hover:text-[var(--c,hsl(var(--foreground)))]"
+              style={color ? ({ "--c": color } as React.CSSProperties) : undefined}
+            />
+            <span className="font-mono text-xs uppercase tracking-widest text-muted-foreground transition-colors group-hover:text-foreground">
+              {label || icon}
+            </span>
+          </li>
+        )
+      })}
+    </ul>
   )
 }

@@ -3,27 +3,47 @@
 @tailwind utilities;
 
 @layer base {
+  /*
+   * Colour system
+   * - Analogous palette: blue → violet → pink (hues ~260°–355°), anchored on the
+   *   original violet primary (#6d28d9).
+   * - Neutrals are tinted toward the primary hue so every grey shares its temperature.
+   * - 60 / 30 / 10: dark neutrals dominate, surfaces support, violet is the single accent.
+   * - The gradient ramp is defined in OKLCH with equal lightness and evenly spaced hues,
+   *   so each band reads as an equal step.
+   */
   :root {
-      --background: 240 10% 3.9%;
-      --foreground: 0 0% 98%;
-      --card: 240 10% 3.9%;
-      --card-foreground: 0 0% 98%;
-      --popover: 240 10% 3.9%;
-      --popover-foreground: 0 0% 98%;
+      --background: 258 30% 4%;
+      --foreground: 250 20% 97%;
+      --card: 258 24% 6%;
+      --card-foreground: 250 20% 97%;
+      --popover: 258 24% 6%;
+      --popover-foreground: 250 20% 97%;
       --primary: 263.4 70% 50.4%;
-      --primary-foreground: 210 20% 98%;
-      --secondary: 240 3.7% 15.9%;
-      --secondary-foreground: 0 0% 98%;
-      --muted: 240 3.7% 15.9%;
-      --muted-foreground: 0 5% 64.9%;
-      --accent: 240 3.7% 15.9%;
-      --accent-foreground: 0 0% 98%;
+      --primary-foreground: 0 0% 100%;
+      --secondary: 258 14% 13%;
+      --secondary-foreground: 250 20% 97%;
+      --muted: 258 14% 13%;
+      --muted-foreground: 255 10% 68%;
+      --accent: 258 14% 13%;
+      --accent-foreground: 250 20% 97%;
       --destructive: 0 62.8% 30.6%;
       --destructive-foreground: 0 0% 98%;
-      --border: 240 3.7% 15.9%;
-      --input: 240 3.7% 15.9%;
-      --ring: 0 70% 50.4%;
+      --border: 258 14% 16%;
+      --input: 258 14% 16%;
+      --ring: 263 85% 66%;
+
+      /* Brand ramp: L 0.64, C 0.21, hue 260° → 354° in ~19° steps */
+      --brand-1: oklch(0.64 0.21 260);
+      --brand-2: oklch(0.64 0.21 279);
+      --brand-3: oklch(0.64 0.21 298);
+      --brand-4: oklch(0.64 0.21 317);
+      --brand-5: oklch(0.64 0.21 336);
+      --brand-6: oklch(0.64 0.21 354);
+      /* Light tint of the primary hue for small accent text (AA on the background) */
+      --brand-soft: oklch(0.8 0.12 298);
   }
+
 
   html {
     scroll-behavior: smooth;
